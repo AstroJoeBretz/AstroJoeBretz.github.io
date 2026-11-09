@@ -1,0 +1,8 @@
+# Working material, not part of the published site
+handoff/
+prof_photo.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
