@@ -87,13 +87,22 @@ nav a:hover { text-decoration: underline; }
 .pubs .title { font-style: italic; }
 .pubs .where { display: block; margin-top: .15rem; }
 .repos a { font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; font-weight: 600; }
+.repos li { display: flex; gap: 1rem; align-items: flex-start; }
+.repos .repo-thumb { flex: 0 0 7rem; }
+.repos .repo-thumb img {
+  width: 100%; aspect-ratio: 5 / 4; object-fit: cover;
+  border: 1px solid var(--sand); border-radius: 8px; background: var(--panel);
+}
+.repos .repo-text { flex: 1; min-width: 0; }
+.repos .repo-text p { margin: .15rem 0 0; }
+@media (min-width: 701px) { .repos .repo-thumb { flex-basis: 10rem; } .repos li { gap: 1.4rem; } }
 .more { margin-top: 1.2rem; font-size: 1rem; }
 
 /* about */
 .about { display: grid; grid-template-columns: 1fr; gap: 1.6rem; align-items: start; }
 .about .photo { width: 11rem; }
 .about .photo img {
-  width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top;
+  width: 100%; aspect-ratio: 8 / 13; object-fit: cover; object-position: top;
   border: 1px solid var(--sand); border-radius: 10px; background: var(--panel);
 }
 .links { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 1.2rem 0 0; }
